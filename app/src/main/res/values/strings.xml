@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">WiFiTesting</string>
     <string name="scan">Scan</string>
+    <string name="level_label">Level:</string>
+    <string name="distance_label">Distance:</string>
+    <string name="read_label">Read no.:</string>
 </resources>

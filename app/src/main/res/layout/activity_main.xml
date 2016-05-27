@@ -9,34 +9,103 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="81dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="247dp"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        tools:layout_constraintLeft_creator="0"
-        app:layout_constraintTop_toTopOf="@+id/activity_main"
-        tools:layout_constraintTop_creator="0"
-        app:layout_constraintRight_toRightOf="@+id/activity_main"
-        tools:layout_constraintRight_creator="0"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
-        tools:layout_constraintBottom_creator="0" />
-
     <Button
-        android:text="Button"
+        android:text="@string/scan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp"
         android:id="@+id/scanButton"
+        tools:text="@string/scan"
         app:layout_constraintLeft_toLeftOf="@+id/activity_main"
         android:layout_marginStart="16dp"
         tools:layout_constraintLeft_creator="0"
         app:layout_constraintTop_toTopOf="@+id/activity_main"
         android:layout_marginTop="16dp"
+        tools:layout_constraintTop_creator="0" />
+
+    <TextView
+        android:text="@string/level_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp"
+        android:id="@+id/levelLabel"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="104dp"
+        tools:layout_constraintTop_creator="0" />
+
+    <TextView
+        android:text="@string/distance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="152dp"
+        android:id="@+id/textView10"
+        app:layout_constraintLeft_toLeftOf="@+id/scanButton"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="152dp"
         tools:layout_constraintTop_creator="0"
-        tools:text="@string/scan" />
+        app:layout_constraintRight_toRightOf="@+id/scanButton"
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="104dp"
+        android:id="@+id/levelValue"
+        app:layout_constraintLeft_toRightOf="@+id/levelLabel"
+        android:layout_marginStart="120dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="104dp"
+        tools:layout_constraintTop_creator="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="152dp"
+        android:id="@+id/distanceValue"
+        app:layout_constraintLeft_toRightOf="@+id/textView10"
+        android:layout_marginStart="104dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="152dp"
+        tools:layout_constraintTop_creator="0" />
+
+    <TextView
+        android:text="@string/read_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="200dp"
+        android:id="@+id/readLabel"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        android:layout_marginTop="32dp"
+        tools:layout_constraintTop_creator="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="200dp"
+        android:id="@+id/readValue"
+        app:layout_constraintLeft_toRightOf="@+id/scanButton"
+        android:layout_marginStart="24dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/readLabel"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/readLabel"
+        tools:layout_constraintBottom_creator="0" />
 
 </android.support.constraint.ConstraintLayout>
