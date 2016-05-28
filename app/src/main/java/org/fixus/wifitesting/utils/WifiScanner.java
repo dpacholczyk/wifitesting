@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.wifi.ScanResult;
 import android.net.wifi.WifiManager;
+import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +37,7 @@ public class WifiScanner extends BroadcastReceiver {
     public double calculateDistance(int rssi, int frequence) {
         double distance = 0;
 
-        distance = (K - (20 * Math.log10(frequence)) + Math.abs(distance)) / 20.0;
+        distance = (K - (20 * Math.log10(frequence)) + Math.abs(rssi)) / 20.0;
         distance = Math.pow(10.0, distance);
 
         return distance;
